@@ -1,7 +1,7 @@
 class DownloadsController < ApplicationController
   before_filter :authenticate
   
-  USERS = { 'keryx' => 'keryxadminsrule!' }
+  USERS = { 'USERNAME' => 'PASSWORD' }
   
   def authenticate
     self.config.secret = "result of rake secret"
