@@ -1,0 +1,9 @@
+<a href="http://github.com/excid3"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
+<%- if @download %>
+  <META HTTP-EQUIV="Refresh" CONTENT="0;<%= @download[:original_url] %>">
+  <h1>Your download will begin in a second</h1>
+  <p>Click here if it the download doesn't start automatically: <a href="<%= @download[:original_url] %>"><%= @download[:path] %></a></p>
+<% else %>
+  <h1>404 Not Found</h1>
+	<p>Check that the link you are using is correct or contact me over at <a href="http://excid3.com">excid3.com</a> if you know there is an issue with the site.
+<% end %>
